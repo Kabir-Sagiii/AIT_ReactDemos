@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function createH2Element() {
+        var h2Reference = document.createElement("h2"); //<h2> </h2>
+        var pRef = document.createElement("p");
+        h2Reference.innerText = "I am new h2 Element created by JS";
+        pRef.innerText = "I am New Para";
+        //<h2>I am new h2 Element created by JS </h2>
+
+        var bodyRef = document.getElementById("body");
+        bodyRef.appendChild(h2Reference);
+        bodyRef.appendChild(pRef);
+      }
+    </script>
+  </head>
+  <body id="body">
+    <h1>Create new h2 Element</h1>
+    <button onclick="createH2Element()">create h2</button>
+  </body>
+</html>

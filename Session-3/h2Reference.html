@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function changeContent() {
+        var h2Ref = document.getElementById("title");
+        var pRef = document.getElementById("p1");
+        var btnRef = document.getElementById("btn");
+        h2Ref.innerText = "Hello Javascript";
+        pRef.innerText = "This is Javascript";
+        btnRef.innerText = "Document Content Got Changed";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2 id="title">Document Object</h2>
+      <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate
+        saepe obcaecati quasi aperiam incidunt placeat impedit, eos esse
+        praesentium explicabo accusamus illo? Inventore sapiente error soluta
+        nihil praesentium reprehenderit doloribus, quaerat, laudantium odio
+        deleniti similique eum? Modi aut natus illum fugiat eaque nostrum,
+        dolorum facilis atque porro maxime ex?
+      </p>
+      <button onclick="changeContent()" id="btn">changeContent</button>
+    </div>
+  </body>
+</html>
