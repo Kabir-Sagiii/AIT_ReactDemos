@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="d1"></div>
+
+    <script>
+      var container = React.createElement(
+        "div",
+        {
+          id: "d2",
+          style: { backgroundColor: "green", color: "white", padding: "20px" },
+        },
+        React.createElement("h2", null, "H2 element inside the Div")
+      );
+
+      ReactDOM.render(container, document.getElementById("d1"));
+    </script>
+  </body>
+</html>

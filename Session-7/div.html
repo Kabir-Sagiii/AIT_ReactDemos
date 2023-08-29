@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <style>
+      #container {
+        background-color: green;
+        color: white;
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var DivRef = React.createElement(
+        "div",
+        {
+          id: "container",
+          class: "c1",
+          style: { color: "red", backgroundColor: "black", padding: "20px" },
+        },
+        "This is my Div Element"
+      );
+
+      ReactDOM.render(DivRef, document.getElementById("root"));
+    </script>
+  </body>
+</html>
