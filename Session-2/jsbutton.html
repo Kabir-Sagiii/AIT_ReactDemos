@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function createButton(title) {
+        var btnRef = document.createElement("button");
+        btnRef.innerText = title;
+
+        document.querySelector("body").appendChild(btnRef);
+      }
+
+      function createList() {
+        var olRef = document.createElement("ol");
+
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+        var li3 = document.createElement("li");
+        var li4 = document.createElement("li");
+        var li5 = document.createElement("li");
+
+        li1.innerText = "Apple";
+        li2.innerText = "One Plus";
+        li3.innerText = "Samsung";
+        li4.innerText = "Vivo";
+        li5.innerText = "Oppo";
+
+        olRef.appendChild(li1);
+        olRef.appendChild(li2);
+        olRef.appendChild(li3);
+        olRef.appendChild(li4);
+        olRef.appendChild(li5);
+
+        document.querySelector("body").appendChild(olRef);
+      }
+      createButton("Javascript Button");
+      createList();
+
+      createButton("React Button");
+      createList();
+
+      createButton("CSS Button");
+      createList();
+
+      createButton("Node Button");
+      createList();
+    </script>
+  </body>
+</html>
