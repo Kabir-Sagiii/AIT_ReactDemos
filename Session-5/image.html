@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <style>
+      #image {
+        box-shadow: 0 0 10px red;
+        padding: 30px;
+      }
+    </style> -->
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      //<img src="" width="" height="" />
+      var imgRef = React.createElement("img", {
+        style: {
+          border: "5px solid green",
+          padding: "20px",
+          backgroundColor: "red",
+        },
+        id: "image",
+        src: "https://jslib.dev/wp-content/uploads/2022/03/Reactlogo.jpg",
+        height: "300",
+        width: "500",
+      });
+
+      ReactDOM.render(imgRef, document.getElementById("root"));
+    </script>
+  </body>
+</html>
