@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function myContainer(title, bgcolor, btncolor) {
+        var divStyles = {
+          boxShadow: "0 0 10px black",
+
+          padding: "30px",
+          backgroundColor: bgcolor,
+          color: "white",
+          margin: "50px 20px",
+        };
+
+        return (
+          <div style={divStyles}>
+            <h2> {title} </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              libero nulla voluptatum ullam? Architecto laboriosam quasi
+              repellendus. Voluptate dicta ratione maxime animi! Ex officia iste
+              iure saepe quas officiis voluptate expedita sed necessitatibus
+              obcaecati facilis veniam provident quam odio sequi veritatis,
+              impedit velit. Optio eligendi similique, harum tempore vel est.
+            </p>
+            <button
+              style={{
+                padding: "10px 20px",
+                backgroundColor: btncolor,
+                color: "white",
+                border: "none",
+                borderRadius: "30px",
+              }}
+            >
+              Explore {title}
+            </button>
+          </div>
+        );
+      }
+
+      function mainContainer() {
+        return (
+          <div>
+            {myContainer("HTML", "black", "darkred")}
+            {myContainer("CSS", "darkgreen", "black")}
+            {myContainer("JS", "blue", "coral")}
+          </div>
+        );
+      }
+
+      ReactDOM.render(mainContainer(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
