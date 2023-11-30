@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createDiv() {
+        return (
+          <div>
+            <h2> React JS</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+              ratione molestias magnam vel voluptates aliquid dolorum sunt
+              distinctio. Labore cupiditate nisi ducimus delectus veritatis non
+              qui voluptate quo laudantium, excepturi assumenda laborum,
+              temporibus, nulla reiciendis atque cumque! Velit recusandae
+              dolores numquam possimus unde cupiditate minus necessitatibus
+              odit. Molestias, hic illo?{" "}
+            </p>
+          </div>
+        );
+      }
+
+      function reuse() {
+        return (
+          <div>
+            {createDiv()}
+            {createDiv()}
+            {createDiv()}
+            {createDiv()}
+          </div>
+        );
+      }
+
+      ReactDOM.render(reuse(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
