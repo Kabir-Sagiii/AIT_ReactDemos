@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function getdata() {
+        fetch("").then().then();
+      }
+
+      function Header() {
+        let header = {
+          backgroundColor: "black",
+          height: "70px",
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+        };
+
+        return (
+          <div style={header}>
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">Products</a>
+            <a href="">Cart</a>
+            <a href="">Login</a>
+          </div>
+        );
+      }
+
+      function Main() {
+        var divStyles = {
+          padding: "30px",
+
+          margin: "50px 20px",
+        };
+
+        return (
+          <div style={divStyles}>
+            <h2> REACT JS </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              libero nulla voluptatum ullam? Architecto laboriosam quasi
+              repellendus. Voluptate dicta ratione maxime animi! Ex officia iste
+              iure saepe quas officiis voluptate expedita sed necessitatibus
+              obcaecati facilis veniam provident quam odio sequi veritatis,
+              impedit velit. Optio eligendi similique, harum tempore vel est.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus exercitationem, dolorem reprehenderit iure magnam
+              neque eos repudiandae tempora unde aliquid tenetur dolore culpa
+              voluptatem ipsum ea atque. Expedita modi tenetur ipsum debitis
+              ratione, ea accusamus explicabo vel officiis repellendus alias,
+              ipsa voluptates nemo voluptatem similique. Excepturi similique
+              nesciunt nulla consectetur eos. Nesciunt fugiat sequi provident,
+              quod quisquam nisi neque nulla voluptate officia reiciendis dolor
+              nihil alias quis fugit placeat consequatur. Magnam explicabo unde
+              natus veritatis quod nesciunt, tempora fugit corporis ea
+              exercitationem eligendi. Accusamus repellat animi iure aliquid rem
+              tempora quae blanditiis, est, autem, cum fuga a. Iure tenetur iste
+              consectetur commodi. Dolorem corporis non optio unde illo
+              repudiandae hic veritatis eum neque ipsa voluptate fuga dicta,
+              voluptates aliquid. Ea laudantium esse iusto! Expedita, iusto.
+              Quaerat aliquid officia architecto voluptate quidem laborum nobis
+              ducimus culpa obcaecati aspernatur quis dolorem ab magnam,
+              excepturi, ut numquam dolores unde accusantium voluptatibus iure
+              harum dignissimos. Sit a laboriosam fugit repellendus iusto est
+              atque nesciunt magni, dicta explicabo consequatur sapiente
+              voluptate qui. Omnis fugiat autem modi, a ipsam dolorem iusto
+              eligendi repudiandae excepturi esse facere quos doloremque. Cumque
+              eos quae ipsam magnam impedit debitis quo perferendis sunt maiores
+              quisquam similique, vitae vero fugit consequuntur atque reiciendis
+              sequi nesciunt enim sapiente repellendus eveniet porro assumenda
+              est! Pariatur id earum voluptatum eum voluptates perferendis
+              voluptatem expedita, officia debitis, totam cupiditate iusto
+              optio. Velit cupiditate itaque voluptatum dignissimos. Ducimus
+              quidem aliquam nihil explicabo, nemo velit modi at repellat
+              nesciunt quae! A aut fugit quidem at ea nam eum. Ea, tempore
+              perferendis minima nemo magnam quam ipsam cupiditate vitae iusto
+              velit cumque eius iste consectetur voluptatibus delectus quod ut
+              at hic maxime laborum sed quia facilis soluta? Et provident,
+              sapiente qui id omnis sunt veritatis ipsa eum voluptatem obcaecati
+              aliquam, aliquid esse! Accusantium, libero eius? Laboriosam
+              dolorem iste eaque!
+            </p>
+            <button
+              style={{
+                padding: "10px 20px",
+                backgroundColor: "darkred",
+                color: "white",
+                border: "none",
+                borderRadius: "30px",
+              }}
+            >
+              Explore React
+            </button>
+          </div>
+        );
+      }
+
+      function Footer() {
+        let footer = {
+          padding: "50px",
+          textAlign: "center",
+          backgroundColor: "red",
+          color: "white",
+        };
+
+        return (
+          <div style={footer}>
+            <h2>All rights are Reserved </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
+              debitis temporibus officia quod ratione ab et consectetur illum ad
+              expedita, beatae eum dolore cum totam eaque ipsum vitae iusto vel.
+              Quis, debitis. Assumenda obcaecati sunt doloremque aliquid eum
+              fugit possimus nobis ullam nihil cum temporibus aliquam quidem
+              iste, nemo amet unde pariatur officiis nulla minus perferendis
+              accusantium? Reprehenderit quae non delectus architecto quod odit
+              corporis impedit magni velit. Sequi quam ducimus optio, molestias
+              repudiandae omnis! Earum totam beatae eos qui accusamus ipsa fugit
+              voluptatum minima quia! Commodi excepturi repellendus
+              consequuntur. Voluptates veritatis laudantium et dolores
+              dignissimos illo tenetur maiores, ipsam expedita culpa. Repellat,
+              eaque quo nisi quos modi, aliquid adipisci enim et libero mollitia
+              totam eum veritatis dolores, corrupti in sunt numquam fugiat ad
+              officiis esse? Dolores ullam quod beatae dicta deserunt fugit
+              neque assumenda inventore accusamus magnam sapiente vel unde ea
+              quae omnis in harum, adipisci nemo est saepe!
+            </p>
+          </div>
+        );
+      }
+
+      function Container() {
+        return (
+          <div>
+            <Header />
+            <Main />
+            <Footer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Container />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
