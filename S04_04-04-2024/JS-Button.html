@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      function createButton() {
+        var buttonDomElement = document.createElement("button");
+        buttonDomElement.innerText = "Javascript Button";
+        //Button Will Create
+
+        buttonDomElement.onclick = function () {
+          //Image Element
+          var imgElement = document.createElement("img");
+          imgElement.src =
+            "https://www.crushpixel.com/big-static7/preview4/portrait-young-professional-man-suit-258742.jpg";
+          imgElement.width = "300";
+          imgElement.height = "300";
+          document.getElementById("root").appendChild(imgElement);
+        };
+
+        //ordered list ol , 4-li
+        var OrderedListDomElement = document.createElement("ol");
+        //<ol> </ol>
+        var LiDomElement1 = document.createElement("li"); //<li></li>
+        var LiDomElement2 = document.createElement("li"); //<li></li>
+        var LiDomElement3 = document.createElement("li"); //<li></li>
+        var LiDomElement4 = document.createElement("li"); //<li></li>
+
+        LiDomElement1.innerText = "Apple"; //<li>Apple</li>
+        LiDomElement2.innerText = "Oneplus";
+        LiDomElement3.innerText = "Samsung";
+        LiDomElement4.innerText = "Vivo";
+
+        OrderedListDomElement.appendChild(LiDomElement1);
+        OrderedListDomElement.appendChild(LiDomElement2);
+        OrderedListDomElement.appendChild(LiDomElement3);
+        OrderedListDomElement.appendChild(LiDomElement4);
+
+        //write the code to add button inside the DOM
+        var divDomElement = document.getElementById("root");
+        divDomElement.appendChild(buttonDomElement);
+        divDomElement.appendChild(OrderedListDomElement);
+      }
+
+      createButton();
+      createButton();
+      createButton();
+      createButton();
+      createButton();
+      createButton();
+      createButton();
+      createButton();
+      createButton();
+      createButton();
+    </script>
+  </body>
+</html>
