@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React List element</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var container = (
+        <div>
+          <img
+            src="https://c.pxhere.com/photos/08/7a/male_portrait_profile_social_media_cv_young_elegant_suit-459413.jpg!d"
+            width="300"
+            height="300"
+          />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores,
+            ipsa.
+          </p>
+        </div>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

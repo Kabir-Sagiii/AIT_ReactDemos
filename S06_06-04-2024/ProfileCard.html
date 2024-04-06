@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+      }
+      #card {
+        /* border: 2px solid green; */
+        box-shadow: 0 0 10px green;
+        width: 300px;
+        padding: 13px;
+        text-align: center;
+      }
+    </style>
+    <title>React List element</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createCard(title, imageurl) {
+        return (
+          <div id="card">
+            <img src={imageurl} width="300" height="300" />
+            <h3>{title} </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              ab.
+            </p>
+            <button> Profile Details </button>
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        <div id="container">
+          {createCard(
+            "Raj Verma",
+            "https://c.pxhere.com/photos/08/7a/male_portrait_profile_social_media_cv_young_elegant_suit-459413.jpg!d"
+          )}
+          {createCard(
+            "Sneha sharma",
+            "https://i.pinimg.com/originals/e6/78/4b/e6784b9cd722d02e014d7e60ebe25e39.jpg"
+          )}
+          {createCard(
+            "Nikhil Patel",
+            "https://www.crushpixel.com/big-static7/preview4/portrait-young-professional-man-suit-258742.jpg"
+          )}{" "}
+        </div>,
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
