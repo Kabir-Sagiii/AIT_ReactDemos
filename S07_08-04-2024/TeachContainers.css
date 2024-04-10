@@ -1,0 +1,8 @@
+.techcard {
+  width: 1000px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px red;
+  padding: 20px;
+  background-color: rgb(72, 48, 48);
+  color: white;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simeple Card</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="./SimpleCard.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function CreateCard(props) {
+        //props = {name:"Sonal Sharma",imageUrl:"------"}
+        return (
+          <div className="card">
+            <img src={props.imageUrl} width="100%" height="250" />
+            <h3>{props.name}</h3>
+          </div>
+        );
+      }
+
+      function MultipleCard() {
+        return (
+          <div class="cardContainer">
+            <CreateCard
+              name={"Raj Verma"}
+              imageUrl={
+                "https://m.foolcdn.com/media/dubs/images/smiling_man_in_business_suit_at_laptop_GettyIma.original.jpg"
+              }
+            />
+            <CreateCard
+              name={"Sonal Singh"}
+              imageUrl={
+                "https://th.bing.com/th/id/OIP.BajeRCuQsO1VC-rkSygx_QHaE8?pid=ImgDet&w=474&h=316&rs=1"
+              }
+            />
+            <CreateCard
+              name={"Rajiv Reddy"}
+              imageUrl={
+                "https://c.pxhere.com/photos/93/c7/businessman_man_portrait_male_costume_business_office_office_style-815849.jpg!d"
+              }
+            />
+            <CreateCard
+              name={"Sagar Patil"}
+              imageUrl={
+                "https://i.pinimg.com/736x/07/44/76/074476f844838fb2487a9d7b4d08a904.jpg"
+              }
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<MultipleCard />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

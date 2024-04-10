@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React List element</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="./TeachContainers.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function CreateTechCard(techName) {
+        // techName={title:"HTML",buttonTitle:"HTML Button"}
+        return (
+          <div className="techcard">
+            <h2>{techName.title}</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              ducimus architecto, omnis excepturi voluptates harum at sapiente
+              autem magni quo beatae tenetur dolore nemo aspernatur. Debitis,
+              delectus! Minus itaque maiores asperiores consectetur consequatur
+              dolores cumque accusantium vitae, quidem beatae repudiandae ab
+              ipsum doloribus, quisquam quos aperiam? Ducimus rem excepturi
+              quidem quae, deleniti modi maiores vero harum, mollitia dolorem
+              consectetur dolore, labore dolores reprehenderit? Officia dolorem,
+              quos quidem quae modi fugit.
+            </p>
+            <button> {techName.buttonTitle} </button>
+          </div>
+        );
+      }
+
+      function ShowTechCards() {
+        return (
+          <div>
+            <CreateTechCard title="HTML" buttonTitle="HTML Button" />
+            <CreateTechCard title="CSS" buttonTitle="CSS Button" />
+            <CreateTechCard title="JS" buttonTitle="JS Button" />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<ShowTechCards />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
