@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React List element</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="./Home.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Header() {
+        return (
+          <div className="header">
+            <h2>Header Component</h2>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div className="main">
+            <h2>Main Component</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              porro nisi quis quo est, tempore necessitatibus facere quam
+              laboriosam eveniet earum maiores sunt aut at blanditiis itaque
+              asperiores, aperiam natus incidunt dolorum inventore! Distinctio,
+              magni beatae corporis ipsam voluptate saepe eum aperiam rerum
+              adipisci quasi officiis ab sit iste, repellat illo! Quasi totam
+              vel ullam eius voluptates maiores, architecto explicabo autem
+              consequatur omnis optio quos magni voluptate illo sit eos,
+              blanditiis molestiae culpa ipsam ducimus dicta exercitationem
+              dolor deserunt. Obcaecati vero recusandae ab, itaque id eius
+              deleniti rerum cumque ex ratione optio sequi. Nulla quis minima a
+              dicta cupiditate officiis pariatur explicabo tempore neque rem
+              quod non quas, quia perspiciatis mollitia eos? Deleniti ullam,
+              laudantium, laboriosam pariatur iste eum praesentium veritatis
+              soluta voluptas sequi, obcaecati dolor incidunt fugiat porro
+              ratione facere? Itaque beatae nihil tenetur quam quaerat, totam
+              laudantium cum tempora repudiandae a asperiores expedita, eum quo
+              earum corporis eligendi? Nostrum facere dolorum pariatur adipisci
+              optio sed omnis eveniet quasi quidem, odit, architecto ab
+              voluptas! Ea at doloremque, earum dolore labore quaerat nisi
+              commodi repudiandae sed asperiores libero aspernatur ipsam
+              nesciunt illum deleniti esse? Velit a aut quia facere atque
+              possimus vitae, doloremque illo mollitia asperiores fuga omnis
+              dignissimos obcaecati. ratione facere? Itaque beatae nihil tenetur
+              quam quaerat, totam laudantium cum tempora repudiandae a
+              asperiores expedita, eum quo earum corporis eligendi? Nostrum
+              facere dolorum pariatur adipisci optio sed omnis eveniet quasi
+              quidem, odit, architecto ab voluptas! Ea at doloremque, earum
+              dolore labore quaerat nisi commodi repudiandae sed asperiores
+              libero aspernatur ipsam nesciunt illum deleniti esse? Velit a aut
+              quia facere atque possimus vitae, doloremque illo mollitia
+              asperiores fuga omnis dignissimos obcaecati.
+            </p>
+          </div>
+        );
+      }
+
+      function Footer() {
+        return (
+          <div className="footer">
+            <h2>Footer Component</h2>
+          </div>
+        );
+      }
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Main />
+            <Footer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
