@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="./Navbar.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Navbar() {
+        return (
+          <div className="navbar">
+            <div className="leftColumn box">
+              <h2> My-Ecart </h2>
+            </div>
+            <div className="rightColumn box">
+              <a href=""> Home</a>
+              <a href=""> Products</a>
+              <a href=""> Profile</a>
+              <a href=""> Login</a>
+            </div>
+          </div>
+        );
+      }
+
+      function MSection1() {
+        return (
+          <div className="msection1">
+            <div className="leftColumn">
+              <img
+                src="https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div className="rightColumn">
+              <h3>Hello Everyone</h3>
+              <h1>I m Raj Verma</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quibusdam nulla nisi rerum sequi dolorum facilis deleniti fuga
+                dolorem dignissimos tempora.{" "}
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus dicta beatae molestiae, voluptas doloremque magni
+                voluptates consequuntur error ut, ad eveniet, perspiciatis
+                maiores at asperiores illo id! Consequuntur, possimus, quisquam
+                rerum eius modi tempore iure eum molestias ratione a dicta!{" "}
+              </p>
+              <p>
+                <b>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquam numquam incidunt impedit ratione alias explicabo
+                  tempora culpa deleniti, nam optio?{" "}
+                </b>{" "}
+              </p>
+            </div>
+          </div>
+        );
+      }
+
+      function ImageBox() {
+        return (
+          <div className="imagebox">
+            <img
+              src="https://images.pexels.com/photos/4065864/pexels-photo-4065864.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              width="170"
+              height="170"
+            />
+            <h3>Profile</h3>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Navbar />
+            <MSection1 />
+            <div className="msection2">
+              <ImageBox />
+              <ImageBox />
+              <ImageBox />
+              <ImageBox />
+            </div>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
