@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="./Home.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Navbar() {
+        return (
+          <div className="navbar">
+            <div className="leftColumn box">
+              <h2> My-Ecart </h2>
+            </div>
+            <div className="rightColumn box">
+              <a href=""> Home</a>
+              <a href=""> Products</a>
+              <a href=""> Profile</a>
+              <a href=""> Login</a>
+            </div>
+          </div>
+        );
+      }
+
+      function MSection1() {
+        return (
+          <div className="msection1">
+            <div className="leftColumn">
+              <img
+                src="https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div className="rightColumn">
+              <h3>Hello Everyone</h3>
+              <h1>I m Raj Verma</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quibusdam nulla nisi rerum sequi dolorum facilis deleniti fuga
+                dolorem dignissimos tempora.{" "}
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus dicta beatae molestiae, voluptas doloremque magni
+                voluptates consequuntur error ut, ad eveniet, perspiciatis
+                maiores at asperiores illo id! Consequuntur, possimus, quisquam
+                rerum eius modi tempore iure eum molestias ratione a dicta!{" "}
+              </p>
+              <p>
+                <b>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquam numquam incidunt impedit ratione alias explicabo
+                  tempora culpa deleniti, nam optio?{" "}
+                </b>{" "}
+              </p>
+            </div>
+          </div>
+        );
+      }
+
+      function ImageBox(props) {
+        return (
+          <div className="imagebox">
+            <img src={props.imageurl} width="170" height="170" />
+            <h3>{props.title}</h3>
+          </div>
+        );
+      }
+
+      function Footer() {
+        return (
+          <div className="footer">
+            <h2>All the Copyrights &copy; are Reserved </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+              unde id ipsam earum vero architecto labore ipsa eligendi tempore
+              sequi necessitatibus harum laudantium facere illo repudiandae
+              error, hic vitae adipisci corporis. Magnam, perspiciatis omnis
+              minus blanditiis reprehenderit quaerat quae cupiditate, delectus
+              voluptatum amet laudantium necessitatibus dolor repellat voluptate
+              velit illum esse, non molestiae doloribus sint? Quidem voluptates
+              ipsa excepturi accusantium accusamus, ducimus cum placeat,
+              officiis ratione maxime inventore totam alias aspernatur quae
+              blanditiis tenetur repellat culpa iusto voluptatem asperiores
+              quibusdam? Reprehenderit natus asperiores rem vero ipsam sapiente
+              veniam aspernatur nihil, unde, non perferendis, nulla laborum
+              sequi id ipsum saepe consectetur.{" "}
+            </p>
+            <h3>
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
+              veniam soluta illum modi, distinctio provident.
+            </h3>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Navbar />
+            <MSection1 />
+            <div className="msection2">
+              <ImageBox
+                imageurl={
+                  "https://th.bing.com/th/id/R.046c210c2fb97aa8471ea6640cf0ccca?rik=P5cJGCI13FdS%2fA&riu=http%3a%2f%2fdealsmaps.com%2fwp-content%2fuploads%2f2022%2f03%2fThe-Must-Have-15-Electronics-Products-to-Improve-Your-Life-Quality-1.jpg&ehk=2N26QxEhIgPdRq9dXyINnwwbaHEF%2fDxG3vkrxEEOJH0%3d&risl=&pid=ImgRaw&r=0"
+                }
+                title={"Electronics"}
+              />
+              <ImageBox
+                imageurl={
+                  "https://www.aajewelry.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/3/5/35-ed046final_1.jpg"
+                }
+                title={"Jewelery"}
+              />
+              <ImageBox
+                imageurl={
+                  "https://th.bing.com/th/id/OIP.StVd7xyn99MUuhg4-7ttwwAAAA?rs=1&pid=ImgDetMain"
+                }
+                title={"MensClothing"}
+              />
+              <ImageBox
+                imageurl={
+                  "https://th.bing.com/th/id/OIP.Z9stjIHSA4Yq9ST6BDUV-AHaJ3?rs=1&pid=ImgDetMain"
+                }
+                title={"WomensClothing"}
+              />
+            </div>
+            <Footer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
