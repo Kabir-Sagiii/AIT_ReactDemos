@@ -5,11 +5,15 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   </head>
 
-  <body id="body">
-    <div id="root"></div>
+  <body>
     <script>
-      var div = React.createElement("div", null, "My first React Div");
-      ReactDOM.render(div, document.getElementById("root"));
+      var h1ReactElement = React.createElement(
+        "h1",
+        null,
+        "Welcome to React World"
+      );
+
+      ReactDOM.render(h1ReactElement, document.querySelector("body"));
     </script>
   </body>
 </html>

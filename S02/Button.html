@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Button in React</title>
+
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   </head>
 
   <body>
-    <div id="root"></div>
     <script>
-      var h2 = React.createElement("h2", null, "h2 inside the div");
-      var div = React.createElement("div", null, h2);
+      //React Code
 
-      ReactDOM.render(div, document.getElementById("root"));
+      var buttonReactElement = React.createElement(
+        "button",
+        null,
+        "Login Button in React"
+      );
+
+      ReactDOM.render(buttonReactElement, document.querySelector("body"));
     </script>
   </body>
 </html>
