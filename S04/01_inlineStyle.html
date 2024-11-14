@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inline Styling</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let h2ReactElement = React.createElement(
+        "h2",
+        {
+          id: "title",
+          style: { color: "red", backgroundColor: "black", padding: "20px" },
+        },
+        "Inline Styling for h2"
+      );
+
+      ReactDOM.render(h2ReactElement, document.getElementById("root"));
+    </script>
+  </body>
+</html>

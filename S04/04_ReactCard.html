@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        width: 270px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        padding: 10px;
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <title>Div in React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let h3 = React.createElement("h3", null, "Yash Mehta");
+      let img = React.createElement("img", {
+        src: "https://c.pxhere.com/photos/93/c7/businessman_man_portrait_male_costume_business_office_office_style-815849.jpg!d",
+        width: "100%",
+        height: "200",
+      });
+
+      let div = React.createElement("div", { id: "card" }, [img, h3]);
+
+      let divContainer = React.createElement(
+        "div",
+        { style: { display: "flex", justifyContent: "space-evenly" } },
+        [div, div, div, div]
+      );
+
+      ReactDOM.render(divContainer, document.getElementById("root"));
+    </script>
+  </body>
+</html>
