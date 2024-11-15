@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        width: 270px;
+        padding: 10px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+      }
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <title>Div in React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      function createCard(username, url) {
+        var img = React.createElement("img", {
+          src: url,
+          width: "100%",
+          height: "200",
+        });
+
+        var h3 = React.createElement("h3", null, username);
+
+        var div = React.createElement("div", { id: "card" }, [img, h3]);
+
+        return div;
+      }
+
+      function container() {
+        return React.createElement("div", { id: "container" }, [
+          createCard(
+            "Yash",
+            "https://i.pinimg.com/originals/e3/7e/0e/e37e0e25686c2139b281a57a5b4906f2.jpg"
+          ),
+          createCard(
+            "Sneha",
+            "https://static.vecteezy.com/system/resources/previews/024/354/297/non_2x/business-woman-isolated-illustration-ai-generative-free-photo.jpg"
+          ),
+          createCard(
+            "Zoya",
+            "https://img.freepik.com/premium-photo/young-pretty-woman-white-background_343960-31737.jpg"
+          ),
+          createCard(
+            "Sameer",
+            "https://th.bing.com/th/id/OIP.4Sf5Qzlwrq-0iNoydcGW0wHaLH?rs=1&pid=ImgDetMain"
+          ),
+        ]);
+      }
+
+      ReactDOM.render(container(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
