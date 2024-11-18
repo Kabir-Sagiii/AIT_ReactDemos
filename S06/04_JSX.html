@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        width: 800px;
+        margin: 30px auto;
+        box-shadow: 0 0 10px red;
+        padding: 20px;
+      }
+    </style>
+    <title>Div in React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function container(title) {
+        return (
+          <div id="container">
+            <h2>{title} </h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatibus cumque fugit facere doloremque mollitia impedit
+              ducimus reprehenderit atque laudantium! Unde error fugit
+              praesentium? Fugiat fuga esse sint vitae reiciendis ullam.
+            </p>
+          </div>
+        );
+      }
+
+      function mainContainer() {
+        return (
+          <div>
+            {container("HTML")}
+            {container("CSS")}
+            {container("REACT JS")}
+          </div>
+        );
+      }
+
+      ReactDOM.render(mainContainer(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

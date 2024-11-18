@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        width: 240px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+        background-color: black;
+        color: cornsilk;
+      }
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <title>Div in React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function card(username, url) {
+        return (
+          <div id="card">
+            <img src={url} width="100%" height="300" alt="image" />
+            <h3>{username}</h3>
+          </div>
+        );
+      }
+
+      function container() {
+        return (
+          <div className="container">
+            {card(
+              "Riya Verma",
+              "https://th.bing.com/th/id/R.27ae43a80a74fb4f58d31d0c660eb873?rik=Gym%2bvmBhCMcllg&riu=http%3a%2f%2f5stoneshrm.com%2fwp-content%2fuploads%2f2014%2f06%2fbusinesswoman-2.jpg&ehk=XTIri0c1ETWpYDXgOEDmC82UApEutdYowWawSrpk9Qg%3d&risl=&pid=ImgRaw&r=0"
+            )}
+            {card(
+              "Sneha Reddy",
+              "https://www.geetanjaliinstitute.com/wp-content/uploads/2020/01/student_PNG62561.png"
+            )}
+            {card(
+              "Isha Jaiswal",
+              "https://img.freepik.com/premium-photo/businesswoman-hold-with-laptop-computer_562687-194.jpg"
+            )}
+            {card(
+              "Zoya Khan",
+              "https://localjobs.sulekha.com/common/images/jobs-women.png"
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(container(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
