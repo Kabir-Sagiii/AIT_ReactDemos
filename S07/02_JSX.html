@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Div in React</title>
+    <link rel="stylesheet" href="./02_JSX.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Header() {
+        return (
+          <div className="header">
+            <h1> Header Section </h1>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div className="main">
+            <h2>Main Section</h2>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste in
+              excepturi, dicta nihil nisi sit enim aliquam consectetur itaque
+              illum consequatur aperiam, doloribus distinctio. Dolorem, itaque.
+              Eveniet eum dolores, fugit animi culpa voluptatibus doloremque
+              laudantium? Voluptas quae unde, minus suscipit eligendi laborum
+              blanditiis fuga enim earum facilis tenetur atque illum, ex totam
+              voluptatum debitis, numquam aperiam possimus voluptatibus porro
+              doloribus quia repellendus similique. Quis optio sapiente, ratione
+              id natus laudantium consequuntur harum vitae. Praesentium magni
+              suscipit impedit. Fugiat, tenetur velit. Facilis eligendi,
+              nesciunt quos debitis dolore animi maiores ratione ut. Blanditiis
+              architecto illum autem impedit vitae fugit, non repellat iure!
+            </p>
+            <br />
+            <p>
+              {" "}
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+              unde, pariatur aspernatur dolores, cupiditate perspiciatis placeat
+              harum incidunt a maxime deleniti ipsam ad, perferendis doloremque
+              sunt. Dolores a culpa doloribus ratione reprehenderit omnis
+              pariatur incidunt quia nesciunt! Eos iusto maiores deserunt
+              voluptas amet! Quos tempore dignissimos placeat debitis
+              praesentium eum eos odio deserunt minus perferendis optio maxime
+              quasi dolore repellendus voluptate provident cumque quo,
+              consectetur nihil necessitatibus quisquam autem? Nihil suscipit
+              voluptatem ad molestias alias odio ipsa adipisci quasi ea,
+              accusamus repellat harum sint impedit officiis vero aliquid
+              eveniet officia mollitia voluptate. Hic rerum enim quae amet magni
+              molestias est soluta quod! Ipsum praesentium quidem nihil,
+              dignissimos repudiandae iusto harum recusandae delectus maxime
+              deserunt. Fugit sequi natus voluptatem. Rem porro, cupiditate sint
+              modi laborum veniam necessitatibus nostrum in corporis
+              consequuntur aperiam inventore amet ipsum rerum recusandae beatae
+              iure fugiat odit, voluptatem consectetur expedita tenetur earum
+              aliquid! Omnis saepe fugit ratione?{" "}
+            </p>
+          </div>
+        );
+      }
+
+      function Footer() {
+        return (
+          <div className="footer">
+            <h2>Footer Section</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae aperiam perspiciatis ipsa excepturi. Accusamus, id
+              enim qui, nemo illum similique, reiciendis vero voluptatum quasi
+              nam doloribus suscipit tempora magnam earum hic quibusdam
+              explicabo nihil! Ipsam debitis voluptas eius, recusandae quis
+              obcaecati consectetur dolor. Repellendus, Lorem, ipsum dolor sit
+              amet consectetur adipisicing elit. Repudiandae aperiam
+              perspiciatis ipsa excepturi. Accusamus, id enim qui, nemo illum
+              similique, reiciendis vero voluptatum quasi nam doloribus suscipit
+              tempora magnam earum hic quibusdam explicabo nihil! Ipsam debitis
+              voluptas eius, recusandae quis obcaecati consectetur dolor.
+              Repellendus, fuga commodi quo voluptates voluptatibus a.
+            </p>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Main />
+            <Main />
+            <Footer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

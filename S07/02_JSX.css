@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+}
+.header {
+  height: 70px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  padding: 30px;
+}
+.footer {
+  background-color: black;
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
