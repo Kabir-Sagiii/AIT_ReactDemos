@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .card {
+        width: 240px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+      }
+      .app {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <title>Div in React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Card(props) {
+        //props = {username:"---",url:""} //properties
+        return (
+          <div className="card">
+            <img src={props.url} width="100%" height="200" />
+            <h3> {props.username} </h3>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div className="app">
+            <Card
+              username="Raj Verma"
+              url="https://i.pinimg.com/originals/b8/5e/9d/b85e9df9e9b75bcce3a767eb894ef153.jpg"
+            />
+
+            <Card
+              username="Rohan Reddy"
+              url="https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg"
+            />
+
+            <Card
+              username="Harpreet Singh"
+              url="https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png"
+            />
+
+            <Card
+              username="Manoj Mishra"
+              url="https://i.pinimg.com/originals/a7/66/92/a766923c29305a16ce461b2ae54f4c68.jpg"
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
