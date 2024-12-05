@@ -1,0 +1,22 @@
+.profileContainer {
+  width: 900px;
+  height: 400px;
+  box-shadow: 0 0 10px black;
+  margin: 50px auto;
+  display: flex;
+}
+.leftPPanel {
+  width: 30%;
+}
+
+.rightPPanel {
+  width: 70%;
+  padding: 30px;
+}
+.rightPPanel dd {
+  margin-bottom: 10px;
+}
+.rightPPanel button {
+  margin-right: 20px;
+  padding: 5px 20px;
+}
