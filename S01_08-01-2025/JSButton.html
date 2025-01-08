@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <h2>UI in JS</h2>
+    <script>
+      let buttonDomElement = document.createElement("button");
+      buttonDomElement.innerText = "Javascript Button";
+
+      document.querySelector("body").append(buttonDomElement);
+
+      function createOL() {
+        //1.create ol
+        var ol = document.createElement("ol");
+        //2.create 4 li's
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+        var li3 = document.createElement("li");
+        var li4 = document.createElement("li");
+        //3 add the content li's
+        li1.innerText = "Iphone 16 Pro Max";
+        li2.innerText = "Samsung Galaxy PRo 24";
+        li3.innerText = "Iphone 15";
+        li4.innerText = "Vivo 29 Pro";
+
+        //4 add all li's inside the ol
+        ol.appendChild(li1);
+        ol.appendChild(li2);
+        ol.appendChild(li3);
+        ol.appendChild(li4);
+
+        //5 add ol inside the body
+        document.querySelector("body").append(ol);
+      }
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+      createOL();
+    </script>
+  </body>
+</html>

@@ -1,4 +1,0 @@
-Class Component
-----------------
-Link will be updated .
-
