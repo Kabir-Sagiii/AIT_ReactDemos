@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Card.css" />
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      var card = (
+        <div id="card">
+          <img
+            src="https://i.pinimg.com/originals/f1/b4/f3/f1b4f35c609fd65e1012fe5c1e81ba9b.jpg"
+            width="100%"
+            height="300"
+          />
+          <h3> Yash Mehta </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+            nesciunt!
+          </p>
+        </div>
+      );
+
+      var cardContainer = (
+        <div id="container">
+          {card}
+          {card}
+          {card}
+          {card}
+        </div>
+      );
+
+      ReactDOM.render(cardContainer, document.getElementById("root"));
+    </script>
+  </body>
+</html>
