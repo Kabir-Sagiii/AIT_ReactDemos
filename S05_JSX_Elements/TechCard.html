@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="TechCard.css" rel="stylesheet" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function techCard(title) {
+        return (
+          <div id="techCard">
+            <h3> {title} Info </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              esse officia excepturi autem exercitationem quam. Reiciendis
+              tempore laudantium dolorem aliquam recusandae asperiores tempora
+              doloremque ullam quo, ratione delectus harum itaque a fuga quos
+              sed illum inventore unde veritatis. Aliquam corporis, soluta
+              mollitia culpa quas, in qui dolore vel illo, totam reprehenderit
+              ad. Rerum molestiae sint, perferendis, adipisci perspiciatis
+              excepturi, iste magni quos minima nihil harum fuga. Doloremque
+              corrupti ipsa laboriosam iste culpa laudantium ducimus! Aliquid
+              consequuntur earum praesentium laboriosam obcaecati voluptatibus,
+              reiciendis molestias atque quisquam! Saepe voluptatem consectetur
+              quae fugiat nulla possimus ratione odio hic totam perferendis.
+              Earum fugit commodi fugiat ipsa. Fugiat, quaerat! Nisi inventore
+              saepe iusto sunt obcaecati voluptates aliquid ducimus a? Numquam
+              sit consectetur itaque rerum non dolor quod eius accusamus fugiat
+              unde sapiente eum laborum natus veniam deleniti dolores officia
+              modi dolorum ipsam iste, culpa provident? Quaerat veritatis
+              cupiditate molestias doloremque sequi et vel hic illum?{" "}
+            </p>
+          </div>
+        );
+      }
+
+      function container() {
+        return (
+          <div>
+            {techCard("HTML")}
+            {techCard("CSS")}
+            {techCard("Javascript")}
+            {techCard("React JS")}
+          </div>
+        );
+      }
+
+      //   ReactDOM.render(
+      //     [techCard(), techCard(), techCard()],
+      //     document.getElementById("root")
+      //   );
+
+      ReactDOM.render(container(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

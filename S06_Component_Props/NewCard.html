@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Card.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Card(props) {
+        //In html Attributes are called Properties
+        //props= {name:"--",url:"-----"}
+        return (
+          <div id="card">
+            <img src={props.url} width="100%" height="300" />
+            <h3>{props.name}</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</p>
+          </div>
+        );
+      }
+
+      function Container() {
+        return (
+          <div id="container">
+            <Card
+              name={"Raj Sharma"}
+              url={
+                "https://i.pinimg.com/originals/f1/b4/f3/f1b4f35c609fd65e1012fe5c1e81ba9b.jpg"
+              }
+            />
+
+            <Card
+              name={"Riya Singh"}
+              url={
+                "https://static.vecteezy.com/system/resources/previews/024/354/297/non_2x/business-woman-isolated-illustration-ai-generative-free-photo.jpg"
+              }
+            />
+            <Card
+              name={"Raj Sharma"}
+              url={
+                "https://i.pinimg.com/originals/f1/b4/f3/f1b4f35c609fd65e1012fe5c1e81ba9b.jpg"
+              }
+            />
+
+            <Card
+              name={"Riya Singh"}
+              url={
+                "https://static.vecteezy.com/system/resources/previews/024/354/297/non_2x/business-woman-isolated-illustration-ai-generative-free-photo.jpg"
+              }
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Container />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

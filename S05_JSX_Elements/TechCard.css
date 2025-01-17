@@ -1,0 +1,11 @@
+#techCard {
+  width: 800px;
+  box-shadow: 0 0 10px green;
+  margin: 20px;
+  padding: 10px;
+  background-color: black;
+  color: cornsilk;
+}
+h3 {
+  color: red;
+}

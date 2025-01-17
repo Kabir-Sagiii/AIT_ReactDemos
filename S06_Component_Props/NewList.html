@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function CreateList() {
+        return (
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>React</li>
+            <li>BS</li>
+          </ol>
+        );
+      }
+
+      function MultipleList() {
+        return (
+          <div>
+            <CreateList />
+            <CreateList />
+            <CreateList> </CreateList>
+            <CreateList> </CreateList>
+            <CreateList />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<MultipleList />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

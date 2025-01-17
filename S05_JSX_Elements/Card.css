@@ -1,0 +1,13 @@
+#card {
+  width: 250px;
+  height: 430px;
+  box-shadow: 0 0 10px red;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+#container {
+  display: flex;
+  justify-content: space-evenly;
+}

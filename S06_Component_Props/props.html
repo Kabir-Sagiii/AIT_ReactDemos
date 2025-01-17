@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function CreateList(typesValue) {
+        //first parameter is always object type
+        //All arguments will store inside the first parameter as a properties
+        return (
+          <ol type={typesValue.type} start={typesValue.s}>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>React</li>
+            <li>BS</li>
+          </ol>
+        );
+      }
+
+      function MultipleList() {
+        return (
+          <div>
+            <CreateList type={"1"} s={101} />
+            <CreateList type={"a"} s={null} />
+            <CreateList type={"A"} s={null}>
+              {" "}
+            </CreateList>
+            <CreateList type={"i"} s={null}>
+              {" "}
+            </CreateList>
+            <CreateList type={"I"} s={null} />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<MultipleList />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
