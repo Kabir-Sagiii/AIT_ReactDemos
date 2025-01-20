@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      class Container extends React.Component {
+        render() {
+          return (
+            <div>
+              <h2> Class Component </h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Consequuntur debitis sequi deleniti esse placeat aspernatur
+                dicta, perspiciatis, labore ad dolores officia molestiae eveniet
+                inventore fugit impedit perferendis ratione. Aliquid velit
+                cupiditate deleniti consequatur soluta ipsum, optio autem quos!
+                Mollitia facere officiis ut hic tempora, nulla nesciunt quam
+                provident repellat autem reiciendis dolores magni consequatur
+                atque repellendus nam incidunt non consequuntur praesentium
+                sequi ducimus unde quos. Possimus consequatur asperiores quo
+                vero ad error eum rerum expedita quia minus accusamus aliquam
+                nostrum voluptatem, omnis cum enim necessitatibus quasi adipisci
+                ipsa laboriosam alias deserunt! Aliquam dolorum recusandae quas,
+                quia sit aut hic suscipit!
+              </p>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<Container />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

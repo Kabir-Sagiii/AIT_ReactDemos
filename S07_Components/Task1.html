@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Header() {
+        return (
+          <div>
+            <h2> Header Component</h2>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div>
+            <h2> Main Component</h2>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <h2> App Component</h2>
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        [<Header />, <App />, <Header />, <Main />],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
